@@ -4,15 +4,13 @@
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 
-/*let a = prompt("Dammi il primo numero");
-let b = prompt("Dammi il secondo numero");
+/*let a = parseFloat(prompt("Dammi il primo numero"));
+let b = parseFloat(prompt("Dammi il secondo numero"));
 
-a = parseFloat(a);
-b = parseFloat(b);
 console.log(a);
 console.log(b);
 
-if (!(typeof a === 'number')) {
+if (isNaN(a) || isNaN(b)) {
   window.alert("Uno dei due valori non é un numero");
 }  else if (a > b) {
   window.alert("Il numero piú grande é il primo, " + a);
@@ -33,16 +31,18 @@ ESERCIZIO 2
 
 /*let a = parseFloat(prompt("Dammi un numero"));
 
-if (a < 5){
-  console.log("Tiny");
+if (isNaN(a)) {
+  window.alert("Il valore dato non é un numero");
+} else if (a < 5){
+  window.alert("Tiny");
 } else if (a >= 5 && a < 10) {
-  console.log("Small");
+  window.alert("Small");
 } else if (a >= 10 && a < 15) {
-  console.log("Medium");
+  window.alert("Medium");
 } else if (a >= 15 && a < 20) {
-  console.log("Large");
+  window.alert("Large");
 } else {
-  console.log("Huge");
+  window.alert("Huge");
 }*/
 
 //ESERCIZI SUI CICLI: 
@@ -86,14 +86,16 @@ else niente 8 da queste parti
 /*let a = parseFloat(prompt("Dammi il primo numero"));
 let b = parseFloat(prompt("Dammi il secondo numero"));
 
-if (a === 8 || b === 8) {
-  console.log("Uno dei due numeri é pari a 8");
+if (isNaN(a) || isNaN(b)) {
+  window.alert("Uno dei due valori non é un numero");
+} else if (a === 8 || b === 8) {
+  window.alert("Uno dei due numeri é pari a 8");
 } else if (a + b === 8) {
-  console.log("La somma dei due numeri é pari a 8");
+  window.alert("La somma dei due numeri é pari a 8");
 } else if (a - b === 8) {
-  console.log("La sottrazione dei due numeri é pari a 8");
+  window.alert("La sottrazione dei due numeri é pari a 8");
 } else {
-  console.log("Niente 8 da queste parti...");
+  window.alert("Niente 8 da queste parti...");
 }*/
 
 /* ESERCIZIO EXTRA 2
@@ -135,7 +137,7 @@ if (totalShoppingCart > 50) {
 }*/
 
 /*  ESERCIZIO EXTRA 4
-  Usa un operatore ternaio per assegnare ad una variabile chiamata "gender" i valori "male" o "female".
+  Usa un operatore ternario per assegnare ad una variabile chiamata "gender" i valori "male" o "female".
   La scelta deve essere basata sul valore di un'altra variabile booleana chiamata isMale.
   Es. se isMale e' vero, il valore di gender deve essere "male"
 */
